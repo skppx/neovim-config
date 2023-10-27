@@ -40,5 +40,12 @@ return require('packer').startup(function(use)
     requires = { "nvim-lua/plenary.nvim" },
 })
   use('nvim-lua/plenary.nvim')
+  use({
+        'tomasiser/vim-code-dark',
+        as = 'codedark',
+        config = function()
+            vim.cmd('colorscheme codedark')
+        end
+    })
 
 end)
